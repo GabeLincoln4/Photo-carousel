@@ -7,7 +7,8 @@
 <script>
 export default {
   name: 'PhotoCarousel',
-  props: ['visibleSlide','index', 'photo']
+  props: ['visibleSlide','index', 'photo'],
+  
 }
 </script>
 
