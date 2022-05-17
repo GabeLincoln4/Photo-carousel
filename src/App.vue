@@ -1,5 +1,5 @@
 <template>
-  <photo-carousel></photo-carousel>
+  <photo-carousel v-for="(photo, index) in photoArray" :key="photo" :index="index" :photo="photo"></photo-carousel>
 </template>
 
 <script>
@@ -11,16 +11,17 @@ export default {
     PhotoCarousel
   }, 
   data() {
-    photoArray = [
+    return {
+      photoArray: [
       "https://picsum.photos/id/250/200/300",
       "https://picsum.photos/id/290/200/300",
       "https://picsum.photos/id/228/200/300",
-      "https://picsum.photos/id/285/200/300",
+      "https://picsum.photos/id/257/200/300",
       "https://picsum.photos/id/256/200/300",
       "https://picsum.photos/id/238/200/300",
       "https://picsum.photos/id/293/200/300",
-      
-    ]
+      ]
+    }
   },
 }
 </script>

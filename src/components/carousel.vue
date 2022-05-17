@@ -1,12 +1,14 @@
 <template>
-  <h1>Photo Carousel</h1>
+  <img :src="photo" />
 </template>
 
 <script>
 export default {
   name: 'PhotoCarousel',
   props: {
-    msg: String
+    photo: {
+      type: String
+    }
   }
 }
 </script>
