@@ -1,15 +1,13 @@
 <template>
-  <img :src="photo" />
+  <div v-show="visibleSlide===index">
+    <img :src="photo" />
+  </div>
 </template>
 
 <script>
 export default {
   name: 'PhotoCarousel',
-  props: {
-    photo: {
-      type: String
-    }
-  }
+  props: ['visibleSlide','index', 'photo']
 }
 </script>
 

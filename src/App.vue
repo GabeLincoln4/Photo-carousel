@@ -1,5 +1,5 @@
 <template>
-  <photo-carousel v-for="(photo, index) in photoArray" :key="photo" :index="index" :photo="photo"></photo-carousel>
+  <photo-carousel v-for="(photo, index) in photoArray" :visibleSlide="visibleSlide" :key="photo" :index="index" :photo="photo"></photo-carousel>
 </template>
 
 <script>
@@ -20,7 +20,8 @@ export default {
       "https://picsum.photos/id/256/200/300",
       "https://picsum.photos/id/238/200/300",
       "https://picsum.photos/id/293/200/300",
-      ]
+      ],
+      visibleSlide: 0,
     }
   },
 }
